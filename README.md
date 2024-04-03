@@ -1,7 +1,7 @@
 # Network-Analysis-Lab
 This will be a lab focusing on analyzing network traffic on both Windows and Linux systems. The lab will be split up into 4 parts for convenience. 
 
-# As a disclaimer, it is highly recomended that this and any other labs, be conducted on a Virtual Machine(both Windows and Linux based) with known good backups as we will be stopping certain startup tasks and utilizing the command prompt!
+# As a disclaimer, it is highly recomended that this and any other labs, be conducted on a Virtual Machine(both Windows and Linux based) with known good backups!
 
 # Network-Traffic-Analysis-Lab 
 
@@ -126,34 +126,88 @@ The Network Traffic lab is designed for individuals to become more familiar with
 
 
 1. In the Start search box, type Wireshark and then select Wireshark
-2. Double click on Ethernet4
-3. Copy IP address of Linux machine
-4. Double Click on the WINSCP shortcut on your Desktop
-5. In the drop down box, select FTP for the protocol. Paste the IP Address from MARS. If copy/paste does not work, type the 32-bit IPv4 address in manually. Put yournameftp for the username and yourname for the password. Click the Login button
-6. Drag the yourname.exe file to the left-hand pane
-7. Close WinSCP
-8. Type IE in the search bar and then launch the Internet Explorer app. Click Use Recommended settings
-9. Paste the IP Address from MARS. If copy/paste does not work, type the 32-bit IPv4 address in manually. After that, put /yourname.exe, replacing yourname with your first name
-10. Choose the Downloads folder and click Save
-11. Click the stop button to stop the Wireshark capture
-12. In the filter pane type frame contains PASS
-13. Scroll down until you see the name yourname.exe
-14. Click Close
-15. Click File, Save as
-16. Change the file type to tcpdump (pcap format)
-17. Click Desktop, and then save the file as UMGC
-18. Close Wireshark
+   
+   ![1 start wireshark](https://github.com/Lantern76/Network-Analysis-Lab/assets/119342094/793f04a5-49af-4a74-8ef6-bd6048a53402)
+
+3. Double click on Ethernet4
+   
+   ![2 etho 4](https://github.com/Lantern76/Network-Analysis-Lab/assets/119342094/10e7b8cd-9def-462c-9c9c-f81d3c653d6c)
+
+5. Copy IP address of Linux machine
+   
+7. Double Click on the WINSCP shortcut
+   
+   ![winscp](https://github.com/Lantern76/Network-Analysis-Lab/assets/119342094/0ddf6313-27fe-47d6-bfa4-7379210ccae2)
+
+9. In the drop down box, select FTP for the protocol. Paste the IP Address from Linux. If copy/paste does not work, type the 32-bit IPv4 address in manually. Put "yourname"ftp for the username and yourname for the password. Click the Login button
+    
+    ![4 ftp](https://github.com/Lantern76/Network-Analysis-Lab/assets/119342094/ecd9672b-5390-4646-ab0a-1d4fc81359a1)
+
+11. Drag the yourname.exe file to the left-hand pane
+    
+    ![5 yournameftp](https://github.com/Lantern76/Network-Analysis-Lab/assets/119342094/477d8271-1fe1-411b-9375-e848c119e7da)
+
+13. Close WinSCP
+    
+15. Type IE in the search bar and then launch the Internet Explorer app. Click Use Recommended settings
+    
+    ![6 IE](https://github.com/Lantern76/Network-Analysis-Lab/assets/119342094/86128eec-b105-4073-a43f-38ba47fcf86d)
+
+17. Paste the IP Address from MARS. If copy/paste does not work, type the 32-bit IPv4 address in manually. After that, put /yourname.exe, replacing yourname with your first name
+    
+    ![7 IE yournmae](https://github.com/Lantern76/Network-Analysis-Lab/assets/119342094/3b373b02-2343-4096-bc0b-da34535cfe05)
+
+19. Choose the Downloads folder and click Save
+    
+    ![8 downloads folder](https://github.com/Lantern76/Network-Analysis-Lab/assets/119342094/1a926185-213c-4795-85b3-5fda7148476f)
+
+21. Click the stop button to stop the Wireshark capture
+    
+    ![9 stop wireshark](https://github.com/Lantern76/Network-Analysis-Lab/assets/119342094/943fa23c-728c-4c04-ac4a-07e10a4519bf)
+
+23. In the filter pane type frame contains PASS
+    
+    ![10 filter frame](https://github.com/Lantern76/Network-Analysis-Lab/assets/119342094/181bf0e2-78d1-433b-ac25-76a97ff67138)
+
+25. Scroll down until you see the name yourname.exe
+    
+    ![11 yourname exe](https://github.com/Lantern76/Network-Analysis-Lab/assets/119342094/2dc65aa2-61cc-408c-a5ee-4ecfcbd42273)
+
+27. Click Close
+    
+29. Click File, Save as
+    
+31. Change the file type to tcpdump (pcap format)
+    
+    ![12 save as ](https://github.com/Lantern76/Network-Analysis-Lab/assets/119342094/f1d9c61e-652c-4221-9c2c-6e0c509d040e)
+
+33. Click Desktop, and then save the file as UMGC
+    
+35. Close Wireshark
 
 
 ### Steps Part 4
 
 
 1. Type Network Miner in the Start Search box and then select Network Miner
-2. Drag the UMGC file into the NetworkMiner pane
-3. Notice the IP Addresses and host names, as well as the identified operating systems
-4. Click the Files tab. Notice the yourname file
-5. Expand the Window to maximize NetworkMiner. Click the credentials tab. Notice that under the FTP protocol, that yourname is displayed as the password
+   
+   ![1 ](https://github.com/Lantern76/Network-Analysis-Lab/assets/119342094/b8919b34-2a40-4949-8899-0830605ddd98)
+
+3. Drag the UMGC file into the NetworkMiner pane
+   
+   ![2](https://github.com/Lantern76/Network-Analysis-Lab/assets/119342094/83449826-bcdd-439c-aaec-30c7fec830a5)
+
+5. Notice the IP Addresses and host names, as well as the identified operating systems
+   
+   ![3](https://github.com/Lantern76/Network-Analysis-Lab/assets/119342094/50ea2214-6cc2-4ae0-94f2-b42597cce430)
+
+7. Click the Files tab. Notice the yourname file
+   
+   ![4](https://github.com/Lantern76/Network-Analysis-Lab/assets/119342094/29454c67-ff90-4736-a286-e91caac7dcca)
+
+9. Expand the Window to maximize NetworkMiner. Click the credentials tab. Notice that under the FTP protocol, that yourname is displayed as the password
     
+![5](https://github.com/Lantern76/Network-Analysis-Lab/assets/119342094/ab47c53d-f1f0-4eea-a0d6-448ca7795b19)
 
 
 
