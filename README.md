@@ -91,14 +91,35 @@ The Network Traffic lab is designed for individuals to become more familiar with
 
 
 1. Enter the terminal and use the following command to see the systems IP address, "ifconfig"
-2. Type the following command on Linux to launch wireshark, "wireshark"
-3. Double click on any in the list of interfaces
-4. Switch to the Windows VM and enter the cmd
-5. Enter the following command using the previously discovered IP of the Linux machine in step 1, "nmap (IP)"
+   
+   ![1 ifconfig](https://github.com/Lantern76/Network-Analysis-Lab/assets/119342094/9cc468f0-7acb-4da0-b308-01db7fc881bb)
+
+3. Type the following command on Linux to launch wireshark, "wireshark"
+   
+   ![2 wireshark](https://github.com/Lantern76/Network-Analysis-Lab/assets/119342094/8c7d3327-ee7c-4468-a08a-b02929de33ed)
+
+5. Double click on any in the list of interfaces
+   
+   ![3 any etho](https://github.com/Lantern76/Network-Analysis-Lab/assets/119342094/e4b27464-c60f-440e-87b0-cc67f0633ec2)
+
+7. Switch to the Windows VM and enter the cmd
+   
+9. Enter the following command using the previously discovered IP of the Linux machine in step 1, "nmap (IP)"
     - You will see the same list of open ports that you saw when you scanned the machine locally
-7. In Wirshark under the Windows VM, Type tcp.flags.reset == 1 the filter pane and click apply. This shows you a list of closed ports on the Linux system
-8. Type tcp.flags.syn ==1 && tcp.flags.ack == 1 in the filter pane and click apply. This shows you a list of open ports on the Linux system
-9. Select File in the Wireshark menu and click close to exit Wireshark. Stop and Quit without saving.
+      
+   ![4 nmap ](https://github.com/Lantern76/Network-Analysis-Lab/assets/119342094/9f194720-d1ec-41d2-bc99-13e6b3117f73)
+
+11. In Wirshark under the Windows VM, Type tcp.flags.reset == 1 the filter pane and click apply. This shows you a list of closed ports on the Linux system
+    
+    ![5 tcp wireshark](https://github.com/Lantern76/Network-Analysis-Lab/assets/119342094/ec4556b4-655b-40a3-840a-22447e44c489)
+
+13. Type tcp.flags.syn ==1 && tcp.flags.ack == 1 in the filter pane and click apply. This shows you a list of open ports on the Linux system
+    
+    ![6 wireshark flags](https://github.com/Lantern76/Network-Analysis-Lab/assets/119342094/364f9919-9b53-4224-aa1b-66dbdbe691a2)
+
+15. Select File in the Wireshark menu and click close to exit Wireshark. Stop and Quit without saving.
+    
+![7 quit wireshark](https://github.com/Lantern76/Network-Analysis-Lab/assets/119342094/1025ee06-99b8-4477-8c43-5812801e2c6d)
 
 
 ### Steps Part 3
