@@ -211,7 +211,7 @@ The Network Traffic lab is designed for individuals to become more familiar with
 
 
 
-### This was an excellent lab to gain hands on experience in capturing network traffic and analyzing the results using both Wireshark and Network Miner! This is a small step into the relm of network monitoring and I plan on messing around with the tools much more to see what other utilities they may offer :)
+### This was an excellent lab to gain hands on experience in capturing network traffic and analyzing the results using both Wireshark and Network Miner! This is a small step into the realm of network monitoring and I plan on messing around with the tools much more to see what other utilities they may offer :)
 
 
 
